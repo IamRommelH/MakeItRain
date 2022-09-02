@@ -1,12 +1,16 @@
 package com.example.makeitrain;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import java.text.NumberFormat;
 
@@ -34,16 +38,27 @@ public class MainActivity extends AppCompatActivity {
 //                Log.d("MIR", "onClick: " + moneyCounter);
 //            }
 //        });
-
     }
 
     public void makeItRain(View view) {
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
         moneyCounter += 2000;
         moneyValue.setText(String.valueOf(numberFormat.format(moneyCounter)));
+        if (moneyCounter > 20000){
+            moneyValue.setTextColor(Color.RED);
+        }
     }
 
     public void showInfo(View view) {
-
+//        Toast.makeText(MainActivity.this, R.string.app_info, Toast.LENGTH_SHORT)
+//            .show();
+        Snackbar.make(moneyValue, R.string.app_info, Snackbar.LENGTH_LONG)
+                .setAction("More", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Log.d("Snack", "showInfo: Hello!");
+                    }
+                })
+                .show();
     }
 }

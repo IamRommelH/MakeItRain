@@ -16,11 +16,6 @@ import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button makeItRain;
-    private Button showInfo;
-    private TextView moneyValue;
-    private int moneyCounter = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

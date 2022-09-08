@@ -1,36 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#3655FF"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <TextView
-        android:id="@+id/textView8"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/name"
-        style="@style/nameStyle" />
+        android:layout_height="match_parent"
+        android:background="#3655FF"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/top_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/img_icon"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/nameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#000000" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/txt_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/test_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#E3F2FD"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/play_button" />
+
+        <TextView
+            android:id="@+id/txt_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:scrollbarSize="4dp"
+            android:textColor="#E3F2FD"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/my_bio"
+                android:textColor="#E3F2FD"
+                android:textSize="16sp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

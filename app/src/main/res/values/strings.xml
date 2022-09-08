@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">IamSyntax</string>
     <string name="name">Syntax Mel</string>
+    <string name="my_bio">Whenever we are writing our classes we have to provide some information
+        about our classes to the JVM like whether this class can be accessible from anywhere or
+        not, whether child class creation is possible or not, whether object creation is
+        possible or not etc. we can specify this information by using an appropriate keyword in
+        java called access modifiers. So access modifiers are used to set accessibility of classes,
+        methods, and other members. Whenever we are writing our classes we have to provide some information
+        about our classes to the JVM like whether this class can be accessible from anywhere or
+        not, whether child class creation is possible or not, whether object creation is
+        possible or not etc. we can specify this information by using an appropriate keyword in
+        java called access modifiers. So access modifiers are used to set accessibility of classes,
+        methods, and other members.Whenever we are writing our classes we have to provide some information
+        about our classes to the JVM like whether this class can be accessible from anywhere or
+        not, whether child class creation is possible or not, whether object creation is
+        possible or not etc. we can specify this information by using an appropriate keyword in
+        java called access modifiers. So access modifiers are used to set accessibility of classes,
+        methods, and other members.</string>
+    <string name="test_hint">Input anything</string>
+    <string name="play_button">Play</string>
+    <string name="img_icon">Test Icon</string>
 </resources>

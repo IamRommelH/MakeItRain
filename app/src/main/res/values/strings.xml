@@ -6,4 +6,8 @@
     <string name="show_info">SHOW INFO</string>
     <string name="test">Hello</string>
     <string name="app_info">Get rich quick</string>
+    <string name="true_button_text">True</string>
+    <string name="false_button_text">false</string>
+    <string name="prev_button_text">Prev</string>
+    <string name="next_button_text">Next</string>
 </resources>

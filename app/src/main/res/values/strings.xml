@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IamSyntax</string>
+    <string name="app_name">MVC</string>
     <string name="you_have">You Have:</string>
     <string name="money_value">$0</string>
     <string name="make_it_rain">MAKE IT RAIN</string>
@@ -10,4 +10,6 @@
     <string name="false_button_text">false</string>
     <string name="prev_button_text">Prev</string>
     <string name="next_button_text">Next</string>
+    <string name="question_text">Some text here</string>
+    <string name="image_android">android_ico</string>
 </resources>
